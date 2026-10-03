@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #111;
+    background: #fff;
+}
+
+.navbar {
+    height: 65px;
+    padding: 0 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #111;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.hero {
+    min-height: 500px;
+    padding: 70px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f7f7f7;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.small-text {
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 15px 0;
+}
+
+.hero p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.status {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.open {
+    background: #d1fae5;
+    color: #047857;
+}
+
+.closed {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.call-button {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.owner {
+    text-align: center;
+}
+
+.owner img {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.owner p {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.owner span {
+    color: #777;
+}
+
+.services,
+.testimonials {
+    padding: 80px 8%;
+}
+
+.services h2,
+.testimonials h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.service-grid,
+.testimonial-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-card,
+.testimonial-card {
+    border: 1px solid #eee;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.testimonial-card p {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.stars {
+    color: #f59e0b;
+    font-size: 20px;
+}
+
+footer {
+    padding: 30px 8%;
+    background: #111;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .service-grid,
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+input {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 14px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    background: #111;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button + button {
+    margin-left: 10px;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Owner Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="./css/style.css"
+    >
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        Shiv Electronics
+    </div>
+
+    <button id="logoutButton">
+        Logout
+    </button>
+
+</header>
+
+
+<main>
+
+<section
+    id="loginSection"
+    class="services"
+>
+
+    <h1>Owner Login</h1>
+
+    <form id="loginForm">
+
+        <input
+            id="phone"
+            type="tel"
+            placeholder="Phone Number"
+            required
+        >
+
+        <input
+            id="password"
+            type="password"
+            placeholder="Password"
+            required
+        >
+
+        <button type="submit">
+            Login
+        </button>
+
+    </form>
+
+    <p id="loginMessage"></p>
+
+</section>
+
+
+<section
+    id="dashboard"
+    class="services"
+    style="display:none;"
+>
+
+    <h1>Shop Dashboard</h1>
+
+    <div class="service-card">
+
+        <h2>
+            Shop Status
+        </h2>
+
+        <p id="currentStatus">
+            Loading...
+        </p>
+
+        <button id="openButton">
+            Mark Shop Open
+        </button>
+
+        <button id="closeButton">
+            Mark Shop Closed
+        </button>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<script src="./js/owner.js"></script>
+
+</body>
+</html>
